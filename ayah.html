@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,8 @@
             margin-top: 10px;
         }
 
-        select, button {
+        select,
+        button {
             margin: 10px;
             padding: 10px 20px;
             font-size: 16px;
@@ -82,7 +84,8 @@
             font-family: 'Amiri', serif;
         }
 
-        .ayah-number::before, .ayah-number::after {
+        .ayah-number::before,
+        .ayah-number::after {
             content: "";
             position: absolute;
             top: 50%;
@@ -98,125 +101,158 @@
             width: 90%;
             height: 90%;
         }
+        .bismillah {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #006400;
+        }
+        .sadaqallah {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #006400;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<h1>اختيار قارئ القرآن الكريم</h1>
-<a href="index.html" style="text-decoration: none;"><h1>السور كاملة</h1></a>
+    <h1>اختيار قارئ القرآن الكريم</h1>
+    <a href="index.html" style="text-decoration: none;">
+        <h1>السور كاملة</h1>
+    </a>
 
-<label for="reciter">اختر القارئ:</label>
-<select id="reciter">
-    <option value="ar.ahmedajamy">أحمد العجمي</option>
-    <option value="ar.alafasy">مشاري راشد العفاسي</option>
-    <option value="ar.hudhaify">علي الحذيفي</option>
-    <option value="ar.husary">محمود خليل الحصري</option>
-    <option value="ar.husarymujawwad">محمود خليل الحصري - مجود</option>
-    <option value="ar.mahermuaiqly">ماهر المعيقلي</option>
-    <option value="ar.minshawi">محمد صديق المنشاوي</option>
-    <option value="ar.muhammadayyoub">محمد أيوب</option>
-    <option value="ar.muhammadjibreel">محمد جبريل</option>
-    <option value="ar.shaatree">أبو بكر الشاطري</option>
-    <option value="fr.leclerc">ترجمة فرنسية - Leclerc</option>
-    <option value="ru.kuliev-audio">ترجمة روسية - كوليف</option>
-    <option value="zh.chinese">ترجمة صينية</option>
-    <option value="ar.abdulbasitmurattal">عبد الباسط عبد الصمد - مرتل</option>
-    <option value="ar.abdullahbasfar">عبد الله بصفر</option>
-    <option value="ar.abdurrahmaansudais">عبد الرحمن السديس</option>
-    <option value="ar.hanirifai">هاني الرفاعي</option>
-    <option value="en.walk">ترجمة إنجليزية - Walk</option>
-    <option value="ar.ibrahimakhbar">إبراهيم الأخضر</option>
-    <option value="fa.hedayatfarfooladvand">ترجمة فارسية - هداية فر فولادوند</option>
-    <option value="ar.parhizgar">محسن برهيزكار</option>
-    <option value="ar.aymanswoaid">أيمن سويد</option>
-    <option value="ar.abdulsamad">عبد الباسط عبد الصمد</option>
-    <option value="ar.saoodshuraym">سعود الشريم</option>
-    <option value="ur.khan">ترجمة أردية - خان</option>
-</select>
+    <label for="reciter">اختر القارئ:</label>
+    <select id="reciter">
+        <option value="ar.ahmedajamy">أحمد العجمي</option>
+        <option value="ar.alafasy">مشاري راشد العفاسي</option>
+        <option value="ar.hudhaify">علي الحذيفي</option>
+        <option value="ar.husary">محمود خليل الحصري</option>
+        <option value="ar.husarymujawwad">محمود خليل الحصري - مجود</option>
+        <option value="ar.mahermuaiqly">ماهر المعيقلي</option>
+        <option value="ar.minshawi">محمد صديق المنشاوي</option>
+        <option value="ar.muhammadayyoub">محمد أيوب</option>
+        <option value="ar.muhammadjibreel">محمد جبريل</option>
+        <option value="ar.shaatree">أبو بكر الشاطري</option>
+        <option value="fr.leclerc">ترجمة فرنسية - Leclerc</option>
+        <option value="ru.kuliev-audio">ترجمة روسية - كوليف</option>
+        <option value="zh.chinese">ترجمة صينية</option>
+        <option value="ar.abdulbasitmurattal">عبد الباسط عبد الصمد - مرتل</option>
+        <option value="ar.abdullahbasfar">عبد الله بصفر</option>
+        <option value="ar.abdurrahmaansudais">عبد الرحمن السديس</option>
+        <option value="ar.hanirifai">هاني الرفاعي</option>
+        <option value="en.walk">ترجمة إنجليزية - Walk</option>
+        <option value="ar.ibrahimakhbar">إبراهيم الأخضر</option>
+        <option value="fa.hedayatfarfooladvand">ترجمة فارسية - هداية فر فولادوند</option>
+        <option value="ar.parhizgar">محسن برهيزكار</option>
+        <option value="ar.aymanswoaid">أيمن سويد</option>
+        <option value="ar.abdulsamad">عبد الباسط عبد الصمد</option>
+        <option value="ar.saoodshuraym">سعود الشريم</option>
+        <option value="ur.khan">ترجمة أردية - خان</option>
+    </select>
 
-<label for="sura">اختر السورة:</label>
-<select id="sura">
-</select>
+    <label for="sura">اختر السورة:</label>
+    <select id="sura">
+    </select>
 
-<button onclick="loadSurah()">عرض السورة</button>
-<audio id="player" controls style="display:none;"></audio>
+    <button onclick="loadSurah()">عرض السورة</button>
+    <audio id="player" controls style="display:none;"></audio>
 
-<div id="quranText"></div>
+    <div id="quranText"></div>
 
 
-<script>
+    <script>
 
-    async function loadReciters() {
-        const reciterSelect = document.getElementById("reciter");
+        async function loadReciters() {
+            const reciterSelect = document.getElementById("reciter");
 
-        try {
-            // Fetch JSON data for available reciters
-            const response = await fetch("https://raw.githubusercontent.com/islamic-network/cdn/master/info/cdn_surah_audio.json");
+            try {
+                // Fetch JSON data for available reciters
+                const response = await fetch("https://raw.githubusercontent.com/islamic-network/cdn/master/info/cdn_surah_audio.json");
+                const data = await response.json();
+
+                // Populate the reciter select dropdown
+                data.reciters.forEach((reciter) => {
+                    const option = document.createElement("option");
+                    option.value = reciter.identifier;
+                    option.textContent = `${reciter.name} (${reciter.style || "غير محدد"})`;
+                    reciterSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error("خطأ أثناء تحميل أسماء القراء:", error);
+                alert("حدث خطأ أثناء تحميل أسماء القراء. يرجى المحاولة لاحقًا.");
+            }
+        }
+
+        async function loadSuras() {
+            const response = await fetch("https://api.alquran.cloud/v1/surah");
+            const data = await response.json();
+            const suraSelect = document.getElementById("sura");
+
+            data.data.forEach((surah) => {
+                const option = document.createElement("option");
+                option.value = surah.number;
+                option.textContent = `${surah.number}. ${surah.englishName} - ${surah.name}`;
+                suraSelect.appendChild(option);
+            });
+        }
+
+        async function loadSurah() {
+            const suraNumber = document.getElementById("sura").value;
+            const reciter = document.getElementById("reciter").value;
+
+            const response = await fetch(`https://api.alquran.cloud/v1/surah/${suraNumber}/${reciter}`);
             const data = await response.json();
 
-            // Populate the reciter select dropdown
-            data.reciters.forEach((reciter) => {
-                const option = document.createElement("option");
-                option.value = reciter.identifier;
-                option.textContent = `${reciter.name} (${reciter.style || "غير محدد"})`;
-                reciterSelect.appendChild(option);
+            const quranText = document.getElementById("quranText");
+            quranText.innerHTML = "";
+
+            data.data.ayahs.forEach((ayah, index) => {
+
+                if (index == 0) {
+                    const bismillah = document.createElement("div");
+                    bismillah.className = "bismillah";
+                    bismillah.textContent = "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ";
+                    quranText.appendChild(bismillah);
+
+                }
+                ayah.text = ayah.text.replace('بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ', "")
+                if (ayah.text.length > 1) {
+                    const span = document.createElement("span");
+                    span.textContent = `${ayah.text} `;
+                    span.className = "ayah";
+                    span.onclick = () => playAyah(ayah.audio);
+
+                    const ayahNumber = document.createElement("span");
+                    ayahNumber.textContent = index;
+                    ayahNumber.className = "ayah-number";
+                    span.appendChild(ayahNumber);
+
+                    quranText.appendChild(span);
+                }
             });
-        } catch (error) {
-            console.error("خطأ أثناء تحميل أسماء القراء:", error);
-            alert("حدث خطأ أثناء تحميل أسماء القراء. يرجى المحاولة لاحقًا.");
+
+            const sadaqAllah = document.createElement("div");
+            sadaqAllah.className = "sadaqallah";
+            sadaqAllah.textContent = "صدق الله العظيم";
+            quranText.appendChild(sadaqAllah);
         }
-    }
 
-    async function loadSuras() {
-        const response = await fetch("https://api.alquran.cloud/v1/surah");
-        const data = await response.json();
-        const suraSelect = document.getElementById("sura");
+        function playAyah(audioUrl) {
+            const audio = document.getElementById("player");
+            audio.src = audioUrl;
+            audio.style.display = "block";
+            audio.play().catch((error) => {
+                console.error("خطأ في تشغيل الصوت:", error);
+                alert("تعذر تشغيل الصوت. تحقق من الرابط.");
+            });
+        }
 
-        data.data.forEach((surah) => {
-            const option = document.createElement("option");
-            option.value = surah.number;
-            option.textContent = `${surah.number}. ${surah.englishName} - ${surah.name}`;
-            suraSelect.appendChild(option);
-        });
-    }
-
-    async function loadSurah() {
-        const suraNumber = document.getElementById("sura").value;
-        const reciter = document.getElementById("reciter").value;
-
-        const response = await fetch(`https://api.alquran.cloud/v1/surah/${suraNumber}/${reciter}`);
-        const data = await response.json();
-
-        const quranText = document.getElementById("quranText");
-        quranText.innerHTML = "";
-
-        data.data.ayahs.forEach((ayah) => {
-            const span = document.createElement("span");
-            span.textContent = `${ayah.text} `;
-            span.className = "ayah";
-            span.onclick = () => playAyah(ayah.audio);
-
-            const ayahNumber = document.createElement("span");
-            ayahNumber.textContent = ayah.numberInSurah;
-            ayahNumber.className = "ayah-number";
-            span.appendChild(ayahNumber);
-
-
-            quranText.appendChild(span);
-        });
-    }
-
-    function playAyah(audioUrl) {
-        const audio = document.getElementById("player");
-        audio.src = audioUrl;
-        audio.style.display = "block";
-        audio.play().catch((error) => {
-            console.error("خطأ في تشغيل الصوت:", error);
-            alert("تعذر تشغيل الصوت. تحقق من الرابط.");
-        });
-    }
-
-    loadSuras();
-</script>
+        loadSuras();
+    </script>
 </body>
+
 </html>

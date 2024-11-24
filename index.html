@@ -195,6 +195,10 @@
                 }
                 ayah.text = ayah.text.replace('بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ', "")
                 if (ayah.text.length>1) {
+
+                    if(index === 0){
+                        index = index+1;
+                    }
                     const span = document.createElement("span");
                     span.textContent = `${ayah.text} `;
                     span.className = "ayah";
